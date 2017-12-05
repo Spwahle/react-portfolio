@@ -15,9 +15,7 @@ options = {
     }
 }
 className = {
-        client.properties !== null ?
-        ['card half-size', client.properties.className].join(' ') :
-            'card half-size'
+        client.properties !== null ? ['card half-size', client.properties.className].join(' ') : 'card half-size'
     } >
     <
     Link
@@ -35,20 +33,20 @@ style = {
     <
     h4 > { direction }
 Project < /h4> <
-    h3 > { client.name } < /h3> <
-    /div> <
-    /Link> <
-    /Tilt>
+h3 > { client.name } < /h3> < /
+    div > <
+    /Link> < /
+    Tilt >
 
-Card.propTypes = {
-    client: PropTypes.shape({
-        name: PropTypes.string.isRequired,
-        slug: PropTypes.string.isRequired,
-        properties: PropTypes.shape({
-            className: PropTypes.string,
-        }),
-    }).isRequired,
-    direction: PropTypes.string.isRequired,
-}
+    Card.propTypes = {
+        client: PropTypes.shape({
+            name: PropTypes.string.isRequired,
+            slug: PropTypes.string.isRequired,
+            properties: PropTypes.shape({
+                className: PropTypes.string,
+            }),
+        }).isRequired,
+        direction: PropTypes.string.isRequired,
+    }
 
 export default Card

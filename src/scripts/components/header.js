@@ -6,14 +6,14 @@ const Header = ({ h1, h2, children }) =>
     header className = "container header fadeInUp" >
     <
     h1 > { h1 } < /h1> <
-    h2 > { h2 } < /h2> { children } <
-    /header>
+h2 > { h2 } < /h2> { children } < /
+    header >
 
-Header.defaultProps = {
-    h1: '',
-    h2: '',
-    children: '',
-}
+    Header.defaultProps = {
+        h1: '',
+        h2: '',
+        children: '',
+    }
 
 Header.propTypes = {
     h1: PropTypes.string,
