@@ -26,8 +26,8 @@ const DotenvPlugin = isProd ?
 
 
 const htmlConfig = {
-    title: 'Gavin Thomas',
-    favicon: 'src/img/favicon.png',
+    title: 'Shaun Wahle',
+    // favicon: 'src/img/favicon.ico',
     template: 'src/index.ejs',
 }
 
@@ -55,7 +55,7 @@ module.exports = {
     },
 
     entry: {
-        app: ['./src/javascripts/index.js'],
+        app: ['./src/scripts/index.js'],
         vendor: [
             'axios',
             'lost',
@@ -70,7 +70,7 @@ module.exports = {
     },
 
     output: {
-        filename: `javascripts/${chunkFile}.js`,
+        filename: `scripts/${chunkFile}.js`,
         path: path.join(__dirname, 'dist'),
         publicPath: '/',
     },
@@ -124,10 +124,10 @@ module.exports = {
         modules: ['node_modules'],
         alias: {
             img: path.join(__dirname, 'src/img'),
-            components: path.join(__dirname, 'src/javascripts/components'),
-            clients: path.join(__dirname, 'src/javascripts/clients'),
-            pages: path.join(__dirname, 'src/javascripts/pages'),
-            utils: path.join(__dirname, 'src/javascripts/utils'),
+            components: path.join(__dirname, 'src/scripts/components'),
+            clients: path.join(__dirname, 'src/scripts/clients'),
+            pages: path.join(__dirname, 'src/scripts/containers'),
+            utils: path.join(__dirname, 'src/scripts/utils'),
         },
     },
 
@@ -139,7 +139,7 @@ module.exports = {
         }),
         new UglifyPlugin(),
 
-        new ExtractTextPlugin(`stylesheets/${chunkFile}.css`),
+        new ExtractTextPlugin(`style/${chunkFile}.css`),
         new webpack.optimize.CommonsChunkPlugin({
             name: 'vendor',
         }),

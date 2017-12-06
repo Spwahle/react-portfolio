@@ -48,6 +48,6 @@ Switch > <
     Footer / >
     <
     /div> < /
-    Router >
+Router >
 
-    render( < Root / > , document.getElementById('app')
+    render( < Root / > , document.getElementById('App')
