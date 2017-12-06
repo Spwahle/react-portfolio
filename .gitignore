@@ -16,6 +16,7 @@
 
 # Ignore Node.JS Files.
 /node_modules
+/.cache
 /logs
 /vendor/assets
 *.log
