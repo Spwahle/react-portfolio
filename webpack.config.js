@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const SitemapPlugin = require('sitemap-webpack-plugin')
 const DotenvWebpack = require('dotenv-webpack')
-const UglifyPlugin = require('uglifyjs-webpack-plugin');
+const UglifyPlugin = require('uglifyjs-webpack-plugin')
 
 const isProd = process.env.NODE_ENV === 'production'
 const chunkFile = isProd ? '[name].[chunkhash]' : '[name]'

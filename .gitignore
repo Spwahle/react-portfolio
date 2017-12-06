@@ -2,6 +2,7 @@
 
 .bundle
 .env
+.dev.env
 
 # Ignore the default SQLite database.
 /db/*.sqlite3
