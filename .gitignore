@@ -1,8 +1,30 @@
-# Project dependencies
-# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
-node_modules
-.cache/
-# Build directory
-public/
 .DS_Store
-yarn-error.log
+
+.bundle
+.env
+
+# Ignore the default SQLite database.
+/db/*.sqlite3
+/db/*.sqlite3-journal
+
+# Ignore all logfiles and tempfiles.
+/log
+/tmp
+!/log/.keep
+!/tmp/.keep
+.byebug_history
+
+# Ignore Node.JS Files.
+/node_modules
+/logs
+/vendor/assets
+*.log
+*.pid
+*.seed
+*.pid.lock
+npm-debug.log*
+.npm
+.eslintcache
+
+/public/assets
+/dist/
